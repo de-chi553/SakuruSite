@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #C1191A;
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+  }
+  
+  .title {
+    font-size: 22px;
+    color: #fff;
+    flex: 1;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .menu {
+    position: absolute;
+    width: 20%;
+    top: 80px;
+    background-color: #C1191A;
+    padding: 20px;
+    z-index: 1;
+    right: 0;
+  }
+  
+  .menuItem {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .universityMenu {
+    background-color: #fff;
+    margin-top: 10px;
+    max-height: 200px;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+  
+  .universityMenuItem {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .contentContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
