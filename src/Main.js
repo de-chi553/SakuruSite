@@ -9,9 +9,9 @@ const Main = () => (
   <Router>
     <Routes>
       <Route path="SakuruSite/login" element={<Login />} />
-      <Route path="SakuruSite/registration" element={<Registration />} />
-      <Route path="SakuruSite/post" element={<Post />} />
-      <Route path="SakuruSite/*" element={<App />} />
+      <Route path="/registration" element={<Registration />} />
+      <Route path="/post" element={<Post />} />
+      <Route path="/*" element={<App />} />
     </Routes>
   </Router>
 );

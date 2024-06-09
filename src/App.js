@@ -36,7 +36,7 @@ const App = () => {
       </header>
       {isMenuVisible && (
         <div className="menu">
-          <Link to="/login" className="menuItem">投稿</Link>
+          <Link to="SakuruSite/login" className="menuItem">投稿</Link>
           <button onClick={() => setSelectedUniversity('')} className="menuItem">切り替え</button>
           {selectedUniversity === '' && (
             <div className="universityMenu">
