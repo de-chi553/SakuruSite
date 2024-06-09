@@ -10,7 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const goToRegistration = () => {
-    navigate('/registration');
+    navigate('SakuruSite/registration');
   };
 
   const handleLogin = async () => {
@@ -22,7 +22,7 @@ const Login = () => {
       const userData = await getUserData(user.uid);
 
       // ログイン後にユーザーのデータとともにPostコンポーネントに移動
-      navigate('/post', { state: { userData } });
+      navigate('SakuruSite/post', { state: { userData } });
     } catch (error) {
       // Handle login errors
       alert('Login Error: ' + error.message);

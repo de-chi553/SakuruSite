@@ -56,6 +56,7 @@ const Post = () => {
         throw new Error('画像を選択してください');
       }
       const randomId = generateRandomID();
+      // eslint-disable-next-line no-unused-vars
       const imageUrl = await uploadImage(selectedImageFile, randomId);
       await addPost(userData.UserID, userData.Username, college, field, content, actplace, randomId);
       setMessage('投稿が送信されました');
