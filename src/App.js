@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import './App.css'; // Import the CSS file as needed
 import CustomNavigationBar from './components/CustomNavigationBar';
 import All from './components/All';
@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const App = () => {
   const [activeButton, setActiveButton] = useState('All');
   const [isMenuVisible, setIsMenuVisible] = useState(false);
-  const [selectedUniversity, setSelectedUniversity] = useState('');
+  const [selectedUniversity, setSelectedUniversity] = useState('立命館大学');
 
   const toggleMenu = () => {
     setIsMenuVisible(!isMenuVisible);
@@ -55,6 +55,7 @@ const App = () => {
           <Route path="SakuruSite/sports" element={<Sports selectedUniversity={selectedUniversity} />} />
           <Route path="SakuruSite/culture" element={<Culture selectedUniversity={selectedUniversity} />} />
           <Route path="SakuruSite/research" element={<Research selectedUniversity={selectedUniversity} />} />
+          <Route path="*" element={<Navigate to="SakuruSite/all" replace />} />
         </Routes>
       </div>
     </div>

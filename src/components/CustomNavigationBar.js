@@ -4,6 +4,7 @@ import './styles.css';
 
 const CustomNavigationBar = ({ activeButton }) => {
   const navigate = useNavigate(); // useNavigateフックを使用
+  
 
   const handlePress = (buttonName) => {
     // ボタンがクリックされたときに、対応するパスに遷移する
