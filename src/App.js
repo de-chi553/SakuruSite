@@ -51,10 +51,10 @@ const App = () => {
       <CustomNavigationBar activeButton={activeButton} setActiveButton={setActiveButton} />
       <div className="contentContainer">
         <Routes>
-          <Route path="/all" element={<All selectedUniversity={selectedUniversity} />} />
-          <Route path="/sports" element={<Sports selectedUniversity={selectedUniversity} />} />
-          <Route path="/culture" element={<Culture selectedUniversity={selectedUniversity} />} />
-          <Route path="/research" element={<Research selectedUniversity={selectedUniversity} />} />
+          <Route path="SakuruSite/all" element={<All selectedUniversity={selectedUniversity} />} />
+          <Route path="SakuruSite/sports" element={<Sports selectedUniversity={selectedUniversity} />} />
+          <Route path="SakuruSite/culture" element={<Culture selectedUniversity={selectedUniversity} />} />
+          <Route path="SakuruSite/research" element={<Research selectedUniversity={selectedUniversity} />} />
         </Routes>
       </div>
     </div>

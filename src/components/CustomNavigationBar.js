@@ -9,19 +9,19 @@ const CustomNavigationBar = ({ activeButton }) => {
     // ボタンがクリックされたときに、対応するパスに遷移する
     switch (buttonName) {
       case 'All':
-        navigate('SakuruSite/all');
+        navigate('/all');
         break;
       case 'Sports':
-        navigate('SakuruSite/sports');
+        navigate('/sports');
         break;
       case 'Culture':
-        navigate('SakuruSite/culture');
+        navigate('/culture');
         break;
       case 'Research':
-        navigate('SakuruSite/research');
+        navigate('/research');
         break;
       default:
-        navigate('SakuruSite/all'); // デフォルトは'all'に遷移する
+        navigate('/all'); // デフォルトは'all'に遷移する
         break;
     }
   };
