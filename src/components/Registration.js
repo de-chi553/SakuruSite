@@ -22,7 +22,7 @@ const Registration = () => {
       // Firestoreにユーザーのデータを保存
       await addUserData(user.uid, username);
 
-      // 登録が成功した場合の処理
+      // 登録が成功した場合の処
       navigate('SakuruSite/post');
     } catch (error) {
       console.error('Error registering user:', error.message);
