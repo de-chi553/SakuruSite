@@ -6,14 +6,14 @@ import Registration from './components/Registration';
 import Post from './components/Post';
 
 const Main = () => (
-  <Router>
+  <BrowserRouter basename={import.meta.env.DEV ? "/" : "/SakuruSite/"}>
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/registration" element={<Registration />} />
       <Route path="/post" element={<Post />} />
       <Route path="/*" element={<App />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 export default Main;
